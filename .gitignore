@@ -1,0 +1,12 @@
+# Archivos compilados de Java
+target/
+*.class
+
+# Archivos de logs
+*.log
+
+# Configuraciones de VS Code (opcional, pero recomendado)
+.vscode/
+.settings/
+.classpath
+.project
