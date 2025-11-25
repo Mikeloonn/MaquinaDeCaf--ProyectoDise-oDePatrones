@@ -23,27 +23,27 @@ public class EstadoPreparando implements EstadoMaquina {
 
     @Override
     public void apagar() {
-        System.out.println("Termine de preparar el café antes de apagar.");
+        System.out.println("Termine de preparar el cafe antes de apagar.");
     }
 
     public void prepararCafe() {
-        System.out.println("Ya se está preparando un café. Espere.");
+        System.out.println("Ya se está preparando un cafe. Espere.");
     }
 
     // Método auxiliar para simular que termina
     public void finalizarProceso() {
-        System.out.println("✅ Café servido. Volviendo a estado listo.");
+        System.out.println(" Cafe servido. Volviendo a estado listo.");
         contexto.setEstado(contexto.getEstadoSinMoneda());
     }
 
     @Override
     public void insertarMoneda() {
-        System.out.println("Espere un momento, preparando café.");
+        System.out.println("Espere un momento, preparando cafe.");
     }
 
     @Override
     public void expulsarMoneda() {
-        System.out.println("Tarde, ya estamos procesando el café.");
+        System.out.println("Tarde, ya estamos procesando el cafe.");
     }
 
     @Override
@@ -54,7 +54,7 @@ public class EstadoPreparando implements EstadoMaquina {
     @Override
     public void dispensar() {
         // Lógica movida desde "prepararCafe"
-        System.out.println("✅ Café servido. Volviendo a estado listo.");
+        System.out.println(" Cafe servido. Volviendo a estado listo.");
         contexto.setEstado(contexto.getEstadoSinMoneda()); // Corregido a getEstadoSinMoneda
     }
 }

@@ -40,11 +40,11 @@ public class MaquinaCafeFacade {
     public Cafe pedirCafe(String tipo, boolean leche, int azucar) {
         // 1. Validar si la máquina está en estado correcto (SinMoneda = Lista)
         if (!(controladorEstado.getEstadoActual() instanceof EstadoSinMoneda)) {
-             System.out.println("⚠ La máquina no está lista (Está apagada, ocupada o ya tiene moneda).");
+             System.out.println(" La maquina no esta lista (Esta apagada, ocupada o ya tiene moneda).");
              return null;
         }
 
-        System.out.println("\n--- ☕ Iniciando proceso de Café: " + tipo + " ---");
+        System.out.println("\n---  Iniciando proceso de Cafe: " + tipo + " ---");
         
         // 2. Simular flujo del usuario usando el Patrón State
         controladorEstado.insertarMoneda();      // Pasa a ConMoneda

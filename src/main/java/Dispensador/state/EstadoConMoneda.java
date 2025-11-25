@@ -36,17 +36,17 @@ public class EstadoConMoneda implements EstadoMaquina {
 
     @Override
     public void dispensar() {
-        System.out.println("Presiona el botón para obtener tu café.");
+        System.out.println("Presiona el boton para obtener tu cafe.");
     }
     
     @Override
     public void encender() {
-        System.out.println("La máquina ya está encendida.");
+        System.out.println("La maquina ya está encendida.");
     }
 
     @Override
     public void apagar() {
-        System.out.println("⚠️ Error: Tienes una moneda dentro. Expúlsala antes de apagar.");
+        System.out.println(" Error: Tienes una moneda dentro. Expulsala antes de apagar.");
         // Lógica alternativa si prefieres que devuelva la moneda y se apague:
         // System.out.println("Devolviendo moneda y apagando...");
         // maquina.setEstado(maquina.getEstadoApagado());
