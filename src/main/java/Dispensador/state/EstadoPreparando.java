@@ -35,18 +35,24 @@ public class EstadoPreparando implements EstadoMaquina {
         System.out.println("✅ Café servido. Volviendo a estado listo.");
         contexto.setEstado(contexto.getEstadoSinMoneda());
     }
-    
-    @Override
-    public void insertarMoneda() { System.out.println("Espere un momento, preparando café."); }
 
     @Override
-    public void expulsarMoneda() { System.out.println("Tarde, ya estamos procesando el café."); }
-    
-    @Override
-    public void presionarBotonCafe() { System.out.println("Ya se está preparando uno."); }
+    public void insertarMoneda() {
+        System.out.println("Espere un momento, preparando café.");
+    }
 
     @Override
-    public void dispensar() { 
+    public void expulsarMoneda() {
+        System.out.println("Tarde, ya estamos procesando el café.");
+    }
+
+    @Override
+    public void presionarBotonCafe() {
+        System.out.println("Ya se está preparando uno.");
+    }
+
+    @Override
+    public void dispensar() {
         // Lógica movida desde "prepararCafe"
         System.out.println("✅ Café servido. Volviendo a estado listo.");
         contexto.setEstado(contexto.getEstadoSinMoneda()); // Corregido a getEstadoSinMoneda

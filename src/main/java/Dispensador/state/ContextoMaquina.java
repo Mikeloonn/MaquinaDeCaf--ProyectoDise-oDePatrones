@@ -79,7 +79,7 @@ public class ContextoMaquina {
     }
     
     // Getters para acceder a las instancias de los estados
-    public EstadoMaquina getEstadoActual() { // <--- AGREGA ESTO
+    public EstadoMaquina getEstadoActual() { 
         return estadoActual;
     }
     
