@@ -304,6 +304,14 @@ public class VentanaCafetera extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEncenderActionPerformed
 
     private void btnApagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApagarActionPerformed
+        // 1. Limpiar el log gris primero
+        txtLog.setText(""); 
+        
+        // 2. Limpiar la barra naranja de entregas
+        jTextArea2.setText("");
+
+        // 3. Ejecutar la lógica de apagado
+        // (Al ejecutar esto, el sistema imprimirá "Apagando máquina..." en el log vacío)
         miMaquina.botonApagar();
     }//GEN-LAST:event_btnApagarActionPerformed
 
